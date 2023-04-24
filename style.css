@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url(https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+    background-size: cover;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-align: center;
+    color: beige;
+}
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin: 5px;
+    position: relative;
+}
+/* Height and Width property will not work on Span tag unless
+you give it a display of flex when ever it is nexted
+inside another container. If it not nexted, then it will work without setting display to flex */
+.clock span{
+    width: 100px;
+    height: 80px;
+    display: flex;
+    background: rgb(160, 161, 83);
+    color: white;
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 50px;
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgb(79, 80, 6);
+}
+#ampm{
+    position: absolute;
+    bottom: 0;
+    background: rgb(233, 236, 4);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 30px;
+    font-size: 10px;
+    width: 40px;
+    color: rgb(141, 96, 7);
+    opacity: 0.8;
+
+}   
